@@ -1,0 +1,37 @@
+{
+    "name": "patrimeo/addon-finary-balance",
+    "description": "Get a Patrimeo asset balance from a Finary shared dashboard",
+    "version": "0.0.1",
+    "type": "library",
+    "keywords": [
+        "Patrimeo"
+    ],
+    "homepage": "https://github.com/patrimeo/finary-balance",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "patrimeo",
+            "email": "contact@patrimeo.org",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.4",
+        "illuminate/http": "^11.0||^12.0",
+        "filament/filament": "^4.0",
+        "patrimeo/contracts": "0.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "\\": "src/"
+        }
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../contracts"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

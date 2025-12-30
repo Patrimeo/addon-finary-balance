@@ -1,0 +1,38 @@
+{
+    "git": {
+        "commitMessage": "chore: release v${version}",
+        "tagName": "v${version}",
+        "requireCleanWorkingDir": true,
+        "requireUpstream": true,
+        "push": true
+    },
+    "npm": {
+	"publish": false,
+	"skipChecks": true
+    },
+    "plugins": {
+        "@release-it/bumper": {
+            "in": {
+                "file": "composer.json",
+                "path": "version"
+            },
+            "out": {
+                "file": "composer.json",
+                "path": "version"
+            }
+        },
+        "@release-it/conventional-changelog": {
+            "preset": "angular",
+            "infile": "CHANGELOG.md"
+        }
+    },
+    "github": {
+        "release": true,
+        "tokenRef": "GITHUB_TOKEN"
+    },
+    "hooks": {
+        "after:release": [
+            "echo '🚀 Nouvelle version ${version} publiée !'"
+        ]
+    }
+}

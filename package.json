@@ -1,0 +1,12 @@
+{
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "release": "dotenv -e .env -- release-it --ci"
+    },
+    "devDependencies": {
+        "@release-it/bumper": "^7.0.5",
+        "@release-it/conventional-changelog": "^10.0.1",
+        "dotenv-cli": "^10.0.0"
+    }
+}
