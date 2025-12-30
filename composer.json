@@ -1,7 +1,7 @@
 {
     "name": "patrimeo/addon-finary-balance",
     "description": "Get a Patrimeo asset balance from a Finary shared dashboard",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "type": "library",
     "keywords": [
         "Patrimeo"
